@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .navbar {
+    @apply bg-white dark:bg-gray-800 p-5 md:px-10 px-2 sm:px-4
+  }
+
+  .navlink {
+    @apply block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700
+  }
+
+  .menu-button {
+    @apply p-2 ml-3 text-sm text-gray-500 border-2 rounded-lg focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 hover:bg-gray-100 focus:outline-none items-center
+  }
+}
+
 html,
 body {
   padding: 0;
